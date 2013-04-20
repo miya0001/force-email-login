@@ -1,6 +1,11 @@
 <?php
 /*
-Plugin Name: Force Email Auth
+Plugin Name: Force email login
+Author: Takayuki Miyauchi
+Plugin URI: http://wpist.me/
+Description: Use email address for login to your WordPress.
+Version: 0.1.0
+Author URI: http://wpist.me/
 */
 
 new Force_Email_Auth();
@@ -14,8 +19,8 @@ function __construct()
 
 public function plugins_loaded()
 {
-    if (get_transient('login_lockdown') && isset($_POST['log'])) {
-        wp_die('Please try after few seconds.');
+    if (get_transient('force_email_login_lockdown') && isset($_POST['log'])) {
+        wp_die('Please retry after a few seconds.');
     }
 
     remove_filter('authenticate', 'wp_authenticate_username_password', 20, 3);
@@ -25,8 +30,8 @@ public function plugins_loaded()
 
 public function wp_login_failed()
 {
-    $lockdown = intval(apply_filters('login_lockdown', 10));
-    set_transient('login_lockdown', true, $lockdown);
+    $lockdown = intval(apply_filters('force_email_login_lockdown', 10));
+    set_transient('force_email_login_lockdown', true, $lockdown);
 }
 
 public function authenticate( $user, $username, $password )
@@ -44,7 +49,12 @@ public function authenticate( $user, $username, $password )
             }
         }
     }
-    return false;
+
+    if (!empty($username) || !empty($password)) {
+        return false;
+    } else {
+        return wp_authenticate_username_password(null, "", "");
+    }
 }
 
 }
