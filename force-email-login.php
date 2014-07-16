@@ -21,8 +21,6 @@ public function plugins_loaded()
 {
     if (get_transient('force_email_login_lockdown') && isset($_POST['log'])) {
         wp_die('Please retry after a few seconds.');
-    } elseif (isset($_POST['log'], $_POST['pwd']) && !is_email($_POST['log'])) {
-        wp_die('Auth failed.');
     }
 
     remove_filter('authenticate', 'wp_authenticate_username_password', 20, 3);
