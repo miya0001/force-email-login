@@ -3,8 +3,8 @@ Contributors: miyauchi
 Donate link: http://wpist.me/
 Tags: widget
 Requires at least: 3.4
-Tested up to: 3.7
-Stable tag: 0.3.0
+Tested up to: 4.0
+Stable tag: 0.4.0
 
 Use email address for login to your WordPress.
 
@@ -43,6 +43,7 @@ Please contact to me.
 = Contributors =
 
 * [Takayuki Miyauchi](http://wpist.me/)
+* [Chris Van Patten](https://github.com/chrisvanpatten)
 
 == Installation ==
 

@@ -2,9 +2,9 @@
 /*
 Plugin Name: Force email login
 Author: Takayuki Miyauchi
-Plugin URI: http://wpist.me/
+Plugin URI: https://github.com/miya0001/force-email-login
 Description: Use email address for login to your WordPress.
-Version: 0.3.0
+Version: 0.4.0
 Author URI: http://wpist.me/
 */
 
