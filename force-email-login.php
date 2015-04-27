@@ -4,7 +4,7 @@ Plugin Name: Force Email Login
 Author: Takayuki Miyauchi
 Plugin URI: https://github.com/miya0001/force-email-login
 Description: Use email address for login to your WordPress.
-Version: 0.5.0
+Version: 0.5.1
 Author URI: https://github.com/miya0001/
 */
 

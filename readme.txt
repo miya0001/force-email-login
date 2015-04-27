@@ -2,8 +2,8 @@
 Contributors: miyauchi
 Tags: email, login
 Requires at least: 3.8
-Tested up to: 4.1
-Stable tag: 0.5.0
+Tested up to: 4.2
+Stable tag: 0.5.1
 
 Use your email address instead of a username to log into your WordPress.
 
