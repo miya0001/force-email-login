@@ -2,14 +2,14 @@
 Contributors: miyauchi
 Tags: email, login
 Requires at least: 3.8
-Tested up to: 4.2
-Stable tag: 0.5.1
+Tested up to: 4.7
+Stable tag: 0.6.0
 
-Use your email address instead of a username to log into your WordPress.
+Use your email address instead of a username to login into your WordPress.
 
 == Description ==
 
-Use your email address instead of a username to log into your WordPress.
+Use your email address instead of a username to login into your WordPress.
 
 It is an easy way to protect from brute-force attacks.
 
@@ -18,7 +18,7 @@ https://github.com/miya0001/force-email-login
 = Some features: =
 
 * Use email address instead of the username to login.
-* Login using the username is always denied.
+* Login with the username is always denied.
 
 = Contributors =
 
@@ -33,10 +33,8 @@ https://github.com/miya0001/force-email-login
 
 == Changelog ==
 
+= 0.6.0 =
+* Tested on WP 4.7.
+
 = 0.1.0 =
 * The first release.
-
-== Credits ==
-
-This plugin is not guaranteed though the user of WordPress can freely use this plugin free of charge regardless of the purpose.
-The author must acknowledge the thing that the operation guarantee and the support in this plugin use are not done at all beforehand.
